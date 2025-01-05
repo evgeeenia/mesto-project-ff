@@ -1,0 +1,53 @@
+.profile__image {
+  width: 120px;
+  height: 120px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin: 0 29px 0 0;
+}
+
+@media screen and (max-width: 740px) {
+  .profile__image {
+    margin: 0 10px 0 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile__image {
+    margin-right: 0;
+  }
+}
+
+.profile__image-overlay {
+  display: flex;
+  place-content: center;
+  background-color: transparent;
+  position: absolute;
+  z-index: 10;
+  width: 120px;
+  height: 120px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile__image-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.profile__image-overlay:hover .profile__avatar-icon {
+  display: block;
+}
+
+
+.profile__avatar-icon {
+  inline-size: 26px;
+  block-size: 26px;
+  display: none;
+  justify-self: center;
+  align-self: center;
+}
